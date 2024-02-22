@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="intro.css">
+    </head>
+<body>
+    <audio id="bleeping" src="click.mp3"></audio>
+
+    <script>
+        var bleep = new Audio();
+        bleep.src = "click.mp3";
+    </script>
+
+    <div class="startgame">
+    <h1>
+    <a href="game.html" target="_blank">
+        <input id="start" type="Image" src="startbutton.png" onmousedown=bleep.play() onclick="start()"> </button>
+    </a>
+</h1>
+</div>
+
+    <video autoplay muted loop id="bgvideo">
+        <source src="BACKGROUND.mp4" >
+    </video>
+
+<script src="../jquery-3.3.1.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+
+
